@@ -3,7 +3,7 @@
 ![Shields.io badge](https://img.shields.io/apm/dm/terminalix.svg?style=flat-square)
 ![Shields.io badge](https://img.shields.io/apm/l/terminalix.svg?style=flat-square)
 
-Terminalix 
+Terminalix
 ==============
 
 (a fork of super-awesome atom package styczynski/terminalix forked from thedaniel/terminal-panel)
@@ -28,15 +28,15 @@ Try pressing the `ctrl` in the terminal for dynamic suggestions list!
 
 Terminal with fancy file links and interactive interface.
 
-![A screenshot of terminalix package](https://raw.githubusercontent.com/isis97/terminalix/master/static/example.gif)
+![A screenshot of terminalix package](https://raw.githubusercontent.com/isis97/atom-terminal-panel/master/static/example.gif)
 
 Fancy custom highlighting rules.
 
-![A screenshot of terminalix package](https://raw.githubusercontent.com/isis97/terminalix/master/static/example3.gif)
+![A screenshot of terminalix package](https://raw.githubusercontent.com/isis97/atom-terminal-panel/master/static/example3.gif)
 
 There's also nice looking easy-to-use command finder dialog (just to search your custom commands and terminal build-ins):
 
-![A screenshot of terminalix package](https://raw.githubusercontent.com/isis97/terminalix/master/static/example_command_finder.png)
+![A screenshot of terminalix package](https://raw.githubusercontent.com/isis97/atom-terminal-panel/master/static/example_command_finder.png)
 
 
 ## Feature
