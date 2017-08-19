@@ -1,7 +1,7 @@
 
 
 
-describe "atom-terminal-panel Testing utils functionality", ->
+describe "terminalix Testing utils functionality", ->
 
   it "tests the \"utils\" module", ->
     require '../lib/atp-utils'

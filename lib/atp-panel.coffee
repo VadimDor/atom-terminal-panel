@@ -1,4 +1,5 @@
 ###
+  Terminalix plugin forked from awesome 
   Atom-terminal-panel
   Copyright by isis97
   MIT licensed
@@ -30,30 +31,30 @@ class ATPPanel extends View
       return text
 
     atom.commands.add 'atom-workspace',
-      'atom-terminal-panel:context-copy-and-execute-output-selection': => @runInCurrentView (i) ->
+      'terminalix:context-copy-and-execute-output-selection': => @runInCurrentView (i) ->
         t = getSelectedText()
         atom.clipboard.write t
         i.onCommand t
-      'atom-terminal-panel:context-copy-output-selection': => @runInCurrentView (i) ->
+      'terminalix:context-copy-output-selection': => @runInCurrentView (i) ->
         atom.clipboard.write getSelectedText()
-      'atom-terminal-panel:context-copy-raw-output': => @runInCurrentView (i) -> atom.clipboard.write(i.getRawOutput())
-      'atom-terminal-panel:context-copy-html-output': => @runInCurrentView (i) -> atom.clipboard.write(i.getHtmlOutput())
-      'atom-terminal-panel:new': => @newTermClick()
-      'atom-terminal-panel:toggle': => @toggle()
-      'atom-terminal-panel:next': => @activeNextCommandView()
-      'atom-terminal-panel:prev': => @activePrevCommandView()
-      'atom-terminal-panel:hide': => @runInCurrentView (i) -> i.close()
-      'atom-terminal-panel:destroy': =>  @runInCurrentView (i) ->
+      'terminalix:context-copy-raw-output': => @runInCurrentView (i) -> atom.clipboard.write(i.getRawOutput())
+      'terminalix:context-copy-html-output': => @runInCurrentView (i) -> atom.clipboard.write(i.getHtmlOutput())
+      'terminalix:new': => @newTermClick()
+      'terminalix:toggle': => @toggle()
+      'terminalix:next': => @activeNextCommandView()
+      'terminalix:prev': => @activePrevCommandView()
+      'terminalix:hide': => @runInCurrentView (i) -> i.close()
+      'terminalix:destroy': =>  @runInCurrentView (i) ->
         i.destroy()
-      'atom-terminal-panel:compile': => @getForcedActiveCommandView().compile()
-      'atom-terminal-panel:toggle-autocompletion': => @runInCurrentView((i) -> i.toggleAutoCompletion())
-      'atom-terminal-panel:reload-config': => @runInCurrentView (i) ->
+      'terminalix:compile': => @getForcedActiveCommandView().compile()
+      'terminalix:toggle-autocompletion': => @runInCurrentView((i) -> i.toggleAutoCompletion())
+      'terminalix:reload-config': => @runInCurrentView (i) ->
         i.clear()
         i.reloadSettings()
         i.clear()
-      'atom-terminal-panel:show-command-finder': => @runInCurrentView (i) ->
+      'terminalix:show-command-finder': => @runInCurrentView (i) ->
         i.getLocalCommandsMemdump()
-      'atom-terminal-panel:open-config': => @runInCurrentView (i) ->
+      'terminalix:open-config': => @runInCurrentView (i) ->
         i.showSettings()
     @createCommandView()
     #@updateStatusBarTask()
@@ -74,7 +75,7 @@ class ATPPanel extends View
     if not instance?
       return
     @termStatusInfo.children().remove()
-    @termStatusInfo.append(instance.parseTemplate (atom.config.get 'atom-terminal-panel.statusBarText'), [], true )
+    @termStatusInfo.append(instance.parseTemplate (atom.config.get 'terminalix.statusBarText'), [], true )
 
   createCommandView: ->
     termStatus = $('<span class="atp-panel icon icon-terminal"></span>')

@@ -1,4 +1,5 @@
 ###
+  Terminalix plugin forked from awesome
   Atom-terminal-panel
   Copyright by isis97
   MIT licensed
@@ -125,7 +126,7 @@ class BuiltinVariables
       if values.file?
         file = values.file
 
-    if (not atom.config.get('atom-terminal-panel.parseSpecialTemplateTokens')) and (not consoleInstance.specsMode)
+    if (not atom.config.get('terminalix.parseSpecialTemplateTokens')) and (not consoleInstance.specsMode)
       consoleInstance.preserveOriginalPaths (prompt.replace /%\([^ ]*\)/ig, '')
 
     if prompt.indexOf('%') == -1
@@ -142,7 +143,7 @@ class BuiltinVariables
         prompt = consoleInstance.util.replaceAll "%(#{key})", value, prompt
 
     if prompt.indexOf('%(raw)') == -1
-      panelPath = atom.packages.resolvePackagePath 'atom-terminal-panel'
+      panelPath = atom.packages.resolvePackagePath 'terminalix'
       atomPath = resolve panelPath+'/../..'
 
       prompt = consoleInstance.util.replaceAll '%(atom)', atomPath, prompt
@@ -301,7 +302,7 @@ class BuiltinVariables
           return "<font style=\"text-decoration:line-through;\">"
         return ''
 
-      if (atom.config.get 'atom-terminal-panel.enableConsoleLabels') or consoleInstance.specsMode
+      if (atom.config.get 'terminalix.enableConsoleLabels') or consoleInstance.specsMode
         prompt = prompt.replace /%\(label:[^\n\t\[\]{}%\)\(]*\)/ig, (match, text, urlId) =>
           target = consoleInstance.util.replaceAll '%(label:', '', match
           target = target.substring 0, target.length-1

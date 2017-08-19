@@ -5,6 +5,7 @@ require './jquery.jqplot.min.js'
 ###
   == ATOM-TERMINAL-PANEL  UTILS PLUGIN ==
 
+  Terminalix plugin forked from awesome
   Atom-terminal-panel builtin plugin v1.0.0
   -isis97
 

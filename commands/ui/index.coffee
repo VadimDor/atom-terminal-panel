@@ -4,6 +4,7 @@ os = require 'os'
 ###
   == ATOM-TERMINAL-PANEL  UI PLUGIN ==
 
+  Terminalix plugin forked from awesome 
   Atom-terminal-panel builtin plugin v1.0.0
   -isis97
 

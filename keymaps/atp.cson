@@ -1,4 +1,5 @@
 ###
+  Terminalix plugin forked from awesome 
   Atom-terminal-panel
   Copyright by isis97
   MIT licensed
@@ -8,25 +9,25 @@
 
 
 '.platform-darwin atom-workspace':
-  'shift-enter': 'atom-terminal-panel:toggle'
-  'cmd-shift-t': 'atom-terminal-panel:new'
-  'cmd-shift-j': 'atom-terminal-panel:next'
-  'cmd-shift-k': 'atom-terminal-panel:prev'
-  'cmd-shift-x': 'atom-terminal-panel:destroy'
-  'ctrl-`': 'atom-terminal-panel:toggle'
+  'shift-enter': 'terminalix:toggle'
+  'cmd-shift-t': 'terminalix:new'
+  'cmd-shift-j': 'terminalix:next'
+  'cmd-shift-k': 'terminalix:prev'
+  'cmd-shift-x': 'terminalix:destroy'
+  'ctrl-`': 'terminalix:toggle'
 
 '.platform-linux atom-workspace, .platform-win32 atom-workspace':
-  'shift-enter': 'atom-terminal-panel:toggle'
-  'alt-shift-t': 'atom-terminal-panel:new'
-  'alt-shift-j': 'atom-terminal-panel:next'
-  'alt-shift-k': 'atom-terminal-panel:prev'
-  'alt-shift-x': 'atom-terminal-panel:destroy'
-  'ctrl-`': 'atom-terminal-panel:toggle'
+  'shift-enter': 'terminalix:toggle'
+  'alt-shift-t': 'terminalix:new'
+  'alt-shift-j': 'terminalix:next'
+  'alt-shift-k': 'terminalix:prev'
+  'alt-shift-x': 'terminalix:destroy'
+  'ctrl-`': 'terminalix:toggle'
 
 '.atp-panel':
   'cmd-c': 'native!'
   'ctrl-c': 'native!'
-  'ctrl': 'atom-terminal-panel:toggle-autocompletion'
+  'ctrl': 'terminalix:toggle-autocompletion'
 
 '.atp-panel-body':
-  'escape': 'atom-terminal-panel:toggle'
+  'escape': 'terminalix:toggle'
