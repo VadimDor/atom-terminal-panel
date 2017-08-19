@@ -1,5 +1,5 @@
 ###
-  Terminalix plugin forked from awesome 
+  Terminalix plugin forked from awesome
   Atom-terminal-panel
   Copyright by isis97
   MIT licensed
@@ -24,7 +24,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Atom terminal Panel'
+      'label': 'Terminalix'
       'submenu': [
         {
           'label': 'Instance'
