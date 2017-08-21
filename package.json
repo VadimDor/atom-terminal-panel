@@ -28,6 +28,9 @@
     "iconv-lite": "^0.4.7",
     "find-config": "^1.0.0",
     "js-yaml": "^3.9.1",
+    "ssh2-connect": "^1.0.2",
+    "ssh2-exec": "^0.3.5",
+    "ssh-exec-plus": "^2.0.1",
     "ps-tree": "^1.0.0"
   }
 }
