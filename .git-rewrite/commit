@@ -1,6 +1,0 @@
-tree 0a5c923c6fd2fdbcf1756509469f01b092de068a
-parent 00ecc0e99272cee45e87b4b4e4771face849cd8d
-author VadimDor <V.Dorez@mail.ru> 1503179095 +0300
-committer VadimDor <V.Dorez@mail.ru> 1503179095 +0300
-
-added node_modules to .gitignore and deleted
