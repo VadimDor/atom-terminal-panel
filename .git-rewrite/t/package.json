@@ -1,0 +1,17 @@
+{
+  "name": "atom-terminal-panel",
+  "main": "./lib/atp",
+  "version": "4.4.4",
+  "description": "An advanced ATOM terminal interface. Fork of awesome atom package - terminal-panel",
+  "repository": "https://github.com/isis97/atom-terminal-panel",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.135.0"
+  },
+  "dependencies": {
+    "ansi-html-stream": "0.0.3",
+    "atom-space-pen-views": "^2.0.3",
+    "jquery-autocomplete-js": "^1.0.6",
+    "iconv-lite": "^0.4.7"
+  }
+}

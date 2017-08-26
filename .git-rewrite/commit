@@ -1,0 +1,16 @@
+tree e3772624a54fef5035b73e30ef4245f184668739
+parent ea2736b699bbcf043506870be126403ddc6e37fe
+author Jeremy Ramin <ebneyaminj@gmail.com> 1439877393 -0700
+committer Jeremy Ramin <ebneyaminj@gmail.com> 1439877393 -0700
+
+Fix process spawn output method
+
+Having stderr pipe to htmlStream would prevent the program from
+handling messages sent to stderr.
+
+Changes:
+- Removed listener for ‘close’
+- Remove putInputBox from ‘exit’ listener
+- Added ‘data’ variable to stdout and stderr listeners
+- Remove stderr pipe to htmlStream
+- Stderr listener now pushes the message itself
