@@ -1,16 +1,6 @@
-tree e3772624a54fef5035b73e30ef4245f184668739
-parent ea2736b699bbcf043506870be126403ddc6e37fe
-author Jeremy Ramin <ebneyaminj@gmail.com> 1439877393 -0700
-committer Jeremy Ramin <ebneyaminj@gmail.com> 1439877393 -0700
+tree 0a5c923c6fd2fdbcf1756509469f01b092de068a
+parent 00ecc0e99272cee45e87b4b4e4771face849cd8d
+author VadimDor <V.Dorez@mail.ru> 1503179095 +0300
+committer VadimDor <V.Dorez@mail.ru> 1503179095 +0300
 
-Fix process spawn output method
-
-Having stderr pipe to htmlStream would prevent the program from
-handling messages sent to stderr.
-
-Changes:
-- Removed listener for ‘close’
-- Remove putInputBox from ‘exit’ listener
-- Added ‘data’ variable to stdout and stderr listeners
-- Remove stderr pipe to htmlStream
-- Stderr listener now pushes the message itself
+added node_modules to .gitignore and deleted

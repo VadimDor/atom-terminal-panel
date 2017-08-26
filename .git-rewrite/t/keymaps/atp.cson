@@ -1,0 +1,33 @@
+###
+  Terminalix plugin forked from awesome 
+  Atom-terminal-panel
+  Copyright by isis97
+  MIT licensed
+
+  Keybindings for the plugin.
+###
+
+
+'.platform-darwin atom-workspace':
+  'shift-enter': 'terminalix:toggle'
+  'cmd-shift-t': 'terminalix:new'
+  'cmd-shift-j': 'terminalix:next'
+  'cmd-shift-k': 'terminalix:prev'
+  'cmd-shift-x': 'terminalix:destroy'
+  'ctrl-`': 'terminalix:toggle'
+
+'.platform-linux atom-workspace, .platform-win32 atom-workspace':
+  'shift-enter': 'terminalix:toggle'
+  'alt-shift-t': 'terminalix:new'
+  'alt-shift-j': 'terminalix:next'
+  'alt-shift-k': 'terminalix:prev'
+  'alt-shift-x': 'terminalix:destroy'
+  'ctrl-`': 'terminalix:toggle'
+
+'.atp-panel':
+  'cmd-c': 'native!'
+  'ctrl-c': 'native!'
+  'ctrl': 'terminalix:toggle-autocompletion'
+
+'.atp-panel-body':
+  'escape': 'terminalix:toggle'
